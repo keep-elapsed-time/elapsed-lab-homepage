@@ -225,7 +225,7 @@ function renderHTML() {
 </section>
 
 <section class="section">
-  <p class="section-title">Projects</p>
+  <p class="section-title">Sites</p>
   <div class="grid">
     ${projectCards}
   </div>
