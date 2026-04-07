@@ -28,14 +28,6 @@ const projects = [
     repo: null,
     tags: ['Personal', 'Travel', 'Tech'],
   },
-  {
-    name: 'Pokémon Card Trade',
-    desc_en: 'My Pokémon trading card shop.',
-    desc_zh: '我的寶可夢集換式卡牌交易頁面。',
-    url: 'https://trade.kapaipai.tw/shop/11240381',
-    repo: null,
-    tags: ['Pokémon', 'TCG'],
-  },
 ];
 
 export default projects;
