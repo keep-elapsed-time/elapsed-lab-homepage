@@ -190,6 +190,24 @@ function renderHTML() {
       letter-spacing: .03em;
     }
 
+    /* ── Events ── */
+    .events-grid { display: flex; flex-wrap: wrap; gap: 1.5rem; }
+    .event-card { flex: 1; min-width: 280px; max-width: 560px; }
+    .video-wrap {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      background: var(--surface);
+      border: 1px solid var(--border);
+    }
+    .video-wrap iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+    }
+
     /* ── Footer ── */
     footer {
       margin-top: auto;
@@ -228,6 +246,20 @@ function renderHTML() {
   <p class="section-title">Sites</p>
   <div class="grid">
     ${projectCards}
+  </div>
+</section>
+
+<section class="section">
+  <p class="section-title">Events</p>
+  <div class="events-grid">
+    <div class="event-card">
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/9gcZ7j3a5MQ?si=Ig-l9bFAawdZTvsU"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
   </div>
 </section>
 
