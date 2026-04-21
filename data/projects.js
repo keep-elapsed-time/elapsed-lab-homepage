@@ -28,6 +28,14 @@ const projects = [
     repo: null,
     tags: ['Personal', 'Travel', 'Tech'],
   },
+  {
+    name: 'Wacom 光華華得展示中心',
+    desc_en: 'Authorized Wacom dealer and support hub in Taipei — products, demos, courses, and technical support for digital creators.',
+    desc_zh: 'Wacom 台北光華授權展示中心，提供產品展示、驅動下載、線上課程與技術支援。',
+    url: 'https://sites.google.com/view/gh3c-wacom-huade',
+    repo: null,
+    tags: ['Hardware', 'Wacom', 'Retail'],
+  },
 ];
 
 export default projects;
