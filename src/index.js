@@ -39,12 +39,12 @@ function renderHTML() {
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Elapsed Lab</title>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4S3DF5XR74"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RFXR7LC1E3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-4S3DF5XR74');
+    gtag('config', 'G-RFXR7LC1E3');
   </script>
   <style>
     :root {
