@@ -34,6 +34,14 @@ export const projects = [
     repo: null,
     tags: ['Hardware', 'Wacom', 'Retail'],
   },
+  {
+    name: '臺北商業論叢',
+    desc_en: 'Academic journal platform by National Taipei University of Business — peer-reviewed business and management research, open-access since 2023.',
+    desc_zh: '國立臺北商業大學出版之學術期刊，2023 年起轉型為開放取用電子期刊，收錄商業與管理領域研究。',
+    url: 'https://journal.ntub.edu.tw/',
+    repo: null,
+    tags: ['Academic', 'Journal', 'NTUB'],
+  },
 ];
 
 // default export keeps /projects.json backward compatible
