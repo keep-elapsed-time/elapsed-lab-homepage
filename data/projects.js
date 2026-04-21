@@ -2,16 +2,11 @@
  * Elapsed Lab — Project List
  * Edit this file and push to update the homepage.
  *
- * Fields:
- *   name         — project name (shown as card title)
- *   desc_en      — English description
- *   desc_zh      — Traditional Chinese description
- *   url          — live URL (optional, null if not deployed)
- *   repo         — GitHub repo URL (optional)
- *   tags         — array of tag strings
+ * sites    — deployed websites / blogs
+ * projects — other work (retail, hardware, events, etc.)
  */
 
-const projects = [
+export const sites = [
   {
     name: 'Friday Blog',
     desc_en: 'Personal blog covering tech, AI, and everything in between.',
@@ -28,6 +23,9 @@ const projects = [
     repo: null,
     tags: ['Personal', 'Travel', 'Tech'],
   },
+];
+
+export const projects = [
   {
     name: 'Wacom 光華華得展示中心',
     desc_en: 'Authorized Wacom dealer and support hub in Taipei — products, demos, courses, and technical support for digital creators.',
@@ -38,4 +36,5 @@ const projects = [
   },
 ];
 
-export default projects;
+// default export keeps /projects.json backward compatible
+export default { sites, projects };

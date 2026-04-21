@@ -1,11 +1,13 @@
-import projects from '../data/projects.js';
+import data from '../data/projects.js';
+
+const { sites, projects } = data;
 
 export default {
   async fetch(request) {
     const { pathname } = new URL(request.url);
 
     if (pathname === '/projects.json') {
-      return new Response(JSON.stringify(projects, null, 2), {
+      return new Response(JSON.stringify(data, null, 2), {
         headers: { 'Content-Type': 'application/json' },
       });
     }
@@ -16,8 +18,8 @@ export default {
   },
 };
 
-function renderHTML() {
-  const projectCards = projects.map(p => `
+function renderCards(items) {
+  return items.map(p => `
     <div class="card">
       <div class="card-header">
         <h3>${p.name}</h3>
@@ -31,6 +33,11 @@ function renderHTML() {
       <div class="tags">${p.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>
     </div>
   `).join('');
+}
+
+function renderHTML() {
+  const siteCards    = renderCards(sites);
+  const projectCards = renderCards(projects);
 
   return `<!DOCTYPE html>
 <html lang="zh-TW">
@@ -252,6 +259,13 @@ function renderHTML() {
 
 <section class="section">
   <p class="section-title">Sites</p>
+  <div class="grid">
+    ${siteCards}
+  </div>
+</section>
+
+<section class="section">
+  <p class="section-title">Projects</p>
   <div class="grid">
     ${projectCards}
   </div>
