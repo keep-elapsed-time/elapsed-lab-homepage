@@ -246,8 +246,11 @@ function renderHTML() {
 <nav>
   <a class="nav-brand" href="/">ELAPSED LAB</a>
   <div class="nav-links">
-    <a href="https://github.com/keep-elapsed-time" target="_blank" rel="noopener">GitHub</a>
-    <a href="https://github.com/keepelapsedtime" target="_blank" rel="noopener">GitHub (alt)</a>
+    <a href="https://www.kevin.taipei" target="_blank" rel="noopener">Home</a>
+    <a href="https://kevin.taipei" target="_blank" rel="noopener">Landing</a>
+    <a href="https://github.com/keep-elapsed-time" target="_blank" rel="noopener">Lab Github</a>
+    <a href="https://github.com/keepelapsedtime" target="_blank" rel="noopener">Kevin Github</a>
+    <a href="https://www.linkedin.com/in/kevink-trk" target="_blank" rel="noopener">Linkedin</a>
   </div>
 </nav>
 
