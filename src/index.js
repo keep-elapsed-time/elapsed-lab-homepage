@@ -233,11 +233,21 @@ function renderHTML() {
       color: var(--muted);
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
+      nav {
+        padding: 1rem 1.25rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .6rem;
+      }
+      .nav-links {
+        flex-wrap: wrap;
+        gap: .6rem 1rem;
+      }
+      .nav-links a { font-size: .75rem; }
       .hero { padding: 3rem 1.25rem 2.5rem; }
       .section { padding: 0 1.25rem 3rem; }
       .grid { grid-template-columns: 1fr; }
-      nav { padding: 1rem 1.25rem; }
     }
   </style>
 </head>
