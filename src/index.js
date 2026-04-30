@@ -344,7 +344,7 @@ function renderHTML() {
   <div class="events-grid">
     <div class="event-card">
       <div class="event-meta">
-        <span class="event-label">Article · Vulcan Lab</span>
+        <span class="event-label">Talk · Vulcan Lab</span>
         <a class="event-link" href="https://vulcanlab.ai/confidently-deploying-genai-trends-risks-and-zero-trust-defense-strategies/" target="_blank" rel="noopener">↗ Read</a>
       </div>
       <div class="article-card" style="padding:0;border:none;background:transparent;">
