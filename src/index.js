@@ -344,6 +344,16 @@ function renderHTML() {
   <div class="events-grid">
     <div class="event-card">
       <div class="event-meta">
+        <span class="event-label">Article · Vulcan Lab</span>
+        <a class="event-link" href="https://vulcanlab.ai/confidently-deploying-genai-trends-risks-and-zero-trust-defense-strategies/" target="_blank" rel="noopener">↗ Read</a>
+      </div>
+      <div class="article-card" style="padding:0;border:none;background:transparent;">
+        <p class="event-title">Confidently Deploying GenAI: Trends, Risks, and Zero Trust Defense Strategies</p>
+        <p class="event-desc">An in-depth look at how organizations can safely adopt GenAI — covering the latest deployment trends, security risks, and how Zero Trust principles apply to LLM-based systems.</p>
+      </div>
+    </div>
+    <div class="event-card">
+      <div class="event-meta">
         <span class="event-label">Article · 資安人</span>
         <a class="event-link" href="https://www.informationsecurity.com.tw/article/article_detail.aspx?aid=11933" target="_blank" rel="noopener">↗ Read</a>
       </div>
