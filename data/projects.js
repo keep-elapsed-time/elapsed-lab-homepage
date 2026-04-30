@@ -44,5 +44,24 @@ export const projects = [
   },
 ];
 
+export const jobs = [
+  {
+    name: 'Vulcan Lab',
+    desc_en: 'AI security research and product development — building the next generation of GenAI safety infrastructure.',
+    desc_zh: 'AI 安全研究與產品開發，打造下一代生成式 AI 安全基礎設施。',
+    url: 'https://vulcanlab.ai/',
+    repo: null,
+    tags: ['AI Security', 'GenAI', 'Research'],
+  },
+  {
+    name: 'OASEC',
+    desc_en: 'Open AI Security — community and resources for AI security practitioners, researchers, and organizations.',
+    desc_zh: '開放式 AI 安全社群，提供 AI 安全從業者、研究人員與組織所需的資源與交流平台。',
+    url: 'https://oasec.org/',
+    repo: null,
+    tags: ['AI Security', 'Community', 'Open Source'],
+  },
+];
+
 // default export keeps /projects.json backward compatible
-export default { sites, projects };
+export default { sites, projects, jobs };

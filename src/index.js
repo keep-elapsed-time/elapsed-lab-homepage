@@ -1,6 +1,6 @@
 import data from '../data/projects.js';
 
-const { sites, projects } = data;
+const { sites, projects, jobs } = data;
 
 export default {
   async fetch(request) {
@@ -38,6 +38,7 @@ function renderCards(items) {
 function renderHTML() {
   const siteCards    = renderCards(sites);
   const projectCards = renderCards(projects);
+  const jobCards     = renderCards(jobs);
 
   return `<!DOCTYPE html>
 <html lang="zh-TW">
@@ -278,7 +279,14 @@ function renderHTML() {
 </section>
 
 <section class="section">
-  <p class="section-title">Projects</p>
+  <p class="section-title">Current Jobs</p>
+  <div class="grid">
+    ${jobCards}
+  </div>
+</section>
+
+<section class="section">
+  <p class="section-title">Past Projects</p>
   <div class="grid">
     ${projectCards}
   </div>
