@@ -206,9 +206,47 @@ function renderHTML() {
       letter-spacing: .03em;
     }
 
-    /* ── Events ── */
+    /* ── Speech & Events ── */
     .events-grid { display: flex; flex-wrap: wrap; gap: 1.5rem; }
-    .event-card { flex: 1; min-width: 280px; max-width: 560px; }
+    .event-card { flex: 1; min-width: 280px; max-width: 560px; display: flex; flex-direction: column; gap: .75rem; }
+    .event-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: .5rem;
+    }
+    .event-label {
+      font-size: .68rem;
+      color: var(--muted);
+      background: var(--tag-bg);
+      border: 1px solid var(--border);
+      padding: .15rem .5rem;
+      border-radius: 2px;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+    .event-link {
+      font-size: .72rem;
+      color: var(--accent);
+      text-decoration: none;
+      padding: .2rem .5rem;
+      border: 1px solid var(--accent);
+      border-radius: 3px;
+      white-space: nowrap;
+      transition: background .15s;
+    }
+    .event-link:hover { background: rgba(0,212,170,.1); }
+    .event-title {
+      font-size: .88rem;
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.4;
+    }
+    .event-desc {
+      font-size: .8rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
     .video-wrap {
       position: relative;
       padding-bottom: 56.25%;
@@ -222,6 +260,15 @@ function renderHTML() {
       top: 0; left: 0;
       width: 100%; height: 100%;
       border: none;
+    }
+    .article-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: .75rem;
+      flex: 1;
     }
 
     /* ── Footer ── */
@@ -293,9 +340,23 @@ function renderHTML() {
 </section>
 
 <section class="section">
-  <p class="section-title">Events</p>
+  <p class="section-title">Speech &amp; Events</p>
   <div class="events-grid">
     <div class="event-card">
+      <div class="event-meta">
+        <span class="event-label">Article · 資安人</span>
+        <a class="event-link" href="https://www.informationsecurity.com.tw/article/article_detail.aspx?aid=11933" target="_blank" rel="noopener">↗ Read</a>
+      </div>
+      <div class="article-card" style="padding:0;border:none;background:transparent;">
+        <p class="event-title">生成式 AI 資安風險與防護策略</p>
+        <p class="event-desc">資安人雜誌專訪 — 深入探討企業導入 GenAI 的資安挑戰，涵蓋提示注入、資料外洩與防護架構設計。</p>
+      </div>
+    </div>
+    <div class="event-card">
+      <div class="event-meta">
+        <span class="event-label">Talk · YouTube</span>
+        <a class="event-link" href="https://www.youtube.com/watch?v=9gcZ7j3a5MQ" target="_blank" rel="noopener">↗ Watch</a>
+      </div>
       <div class="video-wrap">
         <iframe src="https://www.youtube.com/embed/9gcZ7j3a5MQ?si=Ig-l9bFAawdZTvsU"
           title="YouTube video player" frameborder="0"
