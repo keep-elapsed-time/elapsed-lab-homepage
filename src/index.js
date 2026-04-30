@@ -354,12 +354,12 @@ function renderHTML() {
     </div>
     <div class="event-card">
       <div class="event-meta">
-        <span class="event-label">Article · 資安人</span>
+        <span class="event-label">Talk · 資安人論壇</span>
         <a class="event-link" href="https://www.informationsecurity.com.tw/article/article_detail.aspx?aid=11933" target="_blank" rel="noopener">↗ Read</a>
       </div>
       <div class="article-card" style="padding:0;border:none;background:transparent;">
         <p class="event-title">生成式 AI 資安風險與防護策略</p>
-        <p class="event-desc">資安人雜誌專訪 — 深入探討企業導入 GenAI 的資安挑戰，涵蓋提示注入、資料外洩與防護架構設計。</p>
+        <p class="event-desc">資安人論壇講者 — 深入探討企業導入 GenAI 的資安挑戰，涵蓋提示注入、資料外洩與防護架構設計。</p>
       </div>
     </div>
     <div class="event-card">
